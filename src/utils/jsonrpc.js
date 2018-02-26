@@ -1,6 +1,6 @@
 import request from './request';
 
-const url = 'http://localhost:8881/api';
+const url = 'http://danmaku.solidmatrices.com/api';
 
 
 function jsonrpc_request(url, method, params, id = 1) {
