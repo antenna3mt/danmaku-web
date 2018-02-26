@@ -25,8 +25,9 @@ export default {
       try {
         yield put({type: 'loading/on'});
         const {token} = yield select(state => state.auth);
+        let {comments: current_comments} = yield select(state => state.review);
         const {comments} = yield call(Rpc, 'DanmakuService.Review', {token});
-        yield put({type: 'save', payload: {comments}})
+        yield put({type: 'save', payload: {comments: [...current_comments, ...comments]}})
       } finally {
         yield put({type: 'loading/off'});
       }

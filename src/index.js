@@ -2,7 +2,11 @@ import dva from 'dva';
 import './index.css';
 
 // 1. Initialize
-const app = dva();
+const app = dva({
+  onError(e) {
+    console.log(e)
+  }
+});
 
 // 2. Plugins
 // app.use({});
