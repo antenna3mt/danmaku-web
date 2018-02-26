@@ -1,0 +1,25 @@
+.panel_card {
+  margin: 10px;
+}
+
+.footer_text {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.header_text {
+  font-size: 25px;
+  text-align: center;
+}
+
+.color_btn {
+  width: 80%;
+  text-align: center;
+  margin: 8px;
+  color: white;
+  border-color: #eee !important;
+}
+
+.btn_with_margin {
+  margin: 10px;
+}
